@@ -1,0 +1,8 @@
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.AssemblyInfo.cs
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.RazorAssemblyInfo.cache
+C:\Users\glenn\Desktop\work\Cari Kerjaan\Bank Mega\testCode\Frontend\obj\Debug\net7.0\Frontend.RazorAssemblyInfo.cs

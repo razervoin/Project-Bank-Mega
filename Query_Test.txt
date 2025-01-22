@@ -1,0 +1,70 @@
+Soal_Test_Query
+1. Tabel Pembayaran
+
+Primary Key
+- NoKontrak
+
+Foreign Key
+- KodeCabang
+- KodeMotor
+
+2. Tabel Cabang
+
+Primary Key
+- KodeCabang
+
+3. Tabel Motor
+
+Primary Key
+- KodeMotor
+
+
+2. Select NoKontrak, TglBayar, JumlahBayar, KodeCabang, NoKwitansi, KodeMotor 
+   FROM TabelPembayaran 
+   WHERE TglBayar LIKE '2014-10-20%';
+
+3. INSERT INTO Cabang (KodeCabang, NamaCabang)
+   VALUES (200, 'Tangerang');
+
+4. UPDATE Pembayaran
+   SET KodeMotor = '001'
+   WHERE KodeCabang = (SELECT KodeCabang FROM Cabang WHERE NamaCabang = 'Jakarta');
+
+
+5. SELECT 
+	P.NoKontrak,
+	P.TglBayar,
+	P.JumlahBayar,
+	C.KodeCabang,
+	C.NamaCabang,
+	P.NoKwitansi,
+	M.KodeMotor,
+	M.NamaMotor
+   FROM
+	Pembayaran P
+   JOIN
+	Cabang C ON P.KodeCabang = C.KodeCabang 
+   JOIN
+	Motor M ON M.KodeMotor = C.KodeMotor;
+
+6. SELECT 
+	C.KodeCabang,
+	C.NamaCabang,
+	P.NoKontrak,
+	P.NoKwitansi
+   FROM
+	Cabang C
+   JOIN
+	Pembayaran P ON C.KodeCabang = P.KodeCabang;
+
+7. SELECT 
+	C.KodeCabang,
+	C.NamaCabang,
+	COUNT(P.NoKontrak) AS TotalData,
+	COALESCE(SUM(P.JumlahBayar), 0) AS TotalBayar
+   FROM
+	Cabang C
+   LEFT JOIN
+	Pembayaran P ON C.KodeCabang = P.KodeCabang
+   GROUP BY 
+	C.KodeCabang, C.NamaCabang;
